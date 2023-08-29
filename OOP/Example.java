@@ -18,38 +18,5 @@ public class Example {
         studentArray[0] = student1;
         studentArray[1] = new Students("keith");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//        int num = in.nextInt();
-//        in.nextLine();
-//        Students[] students = new Students[num];
-//        for (int i = 0; i < num; i++) {
-//            String name = in.nextLine();
-//            String major = in.nextLine();
-//            students[i] = new Students(name, major);
-//        }
-//
-//        for (int i = 0; i < num; i++) {
-//            System.out.println("Name: " + students[i].getName());
-//        }
-
-
     }
 }
