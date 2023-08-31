@@ -18,5 +18,13 @@ public class Example {
         studentArray[0] = student1;
         studentArray[1] = new Students("keith");
 
+
+        Students[] loopStudent = new Students[5];
+        for (int i = 0; i < loopStudent.length; i++) {
+            loopStudent[i] = new Students(in.nextLine());
+        }
+        System.out.println(loopStudent[4].getName());
+
+
     }
 }
