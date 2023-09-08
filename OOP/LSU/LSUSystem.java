@@ -42,6 +42,11 @@ class AcademicUser extends User{
         courses.add(course);
     }
 
+    public int getID_89_Num() {
+        return ID_89_Num;
+    }
+
+
 }
 
 class Student extends AcademicUser{
@@ -74,6 +79,14 @@ class Instructor extends AcademicUser{
 
     public Instructor(String name, String email, int ID_89_Num) {
         super(name, email, ID_89_Num);
+    }
+
+    public double getSalary() {
+        return Salary;
+    }
+
+    public void setSalary(double salary) {
+        Salary = salary;
     }
 }
 
