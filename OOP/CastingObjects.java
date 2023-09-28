@@ -2,7 +2,7 @@ package CSC1351_Fall2023.OOP;
 
 import java.util.ArrayList;
 
-class Parent{
+class Parent {
     private String a;
 
     public Parent(String a) {
@@ -14,7 +14,7 @@ class Parent{
     }
 }
 
-class Child extends Parent{
+class Child extends Parent {
     private String b;
 
     public Child(String a, String b) {
@@ -29,7 +29,7 @@ public class CastingObjects {
     public static void main(String[] args) {
         Child c = new Child("a","b");
         Parent p = new Parent("a");
-       Parent p1 = new Child("a","b"); //implicit upcasting, subclass type to superclass type, instance of
+        Parent p1 = new Child("a","b"); //implicit upcasting, subclass type to superclass type, instance of
 
         ArrayList<Parent> list = new ArrayList<>();
         c.printChild();;
@@ -39,6 +39,9 @@ public class CastingObjects {
             ((Child)list.get(0)).printChild();
         }
 
+        if(list.get(0) instanceof Child) { //list.get(0) == c
+            ((Child)list.get(0)).printChild();
+        }
         ((Child) p1).printChild(); //downcasting to call method
 
         //further reading
