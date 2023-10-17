@@ -1,4 +1,4 @@
-package CSC1351_Fall2023.OOP.Sorting;
+package CSC1351_Fall2023.Sorting;
 
 import java.util.Scanner;
 
